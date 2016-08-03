@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+		<link rel="stylesheet" href="../../css/icon.css" />
+	</head>
+
+	<body>
+		<div class="mui-content" >  
+		        <ul class="mui-table-view mui-grid-view mui-grid-9" style="background: white;" > 
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" tag="http://query.customs.gov.cn/HYW2007DataQuery/FormStatusQuery.aspx"><a href="#">
+		                    <span class="mui-icon custom_query icon-tongguanzhuangtai" style="color: #EE3B3B;"></span>
+		                    <div class="mui-media-body">通关状态</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" tag="http://query.customs.gov.cn/HYW2007DataQuery/Cscx/CscxMsList.aspx"><a href="#">
+		                    <span class="mui-icon custom_query icon-tongguancanshu" style="color: #6495ED;"></span>
+		                    <div class="mui-media-body">通关参数</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" tag="http://query.customs.gov.cn/HYW2007DataQuery/cdcx.aspx"><a href="#">
+		                    <span class="mui-icon  custom_query icon-changdanxinxi" style="color: #6495ED;"></span>
+		                    <div class="mui-media-body">舱单信息</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon  custom_query icon-guileijueding" 	style="color: #CD8500;"	></span>
+		                    <div class="mui-media-body">归类决定和裁定</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon  custom_query icon-huayanjieguo" style="color: #EE3B3B;"></span>
+		                    <div class="mui-media-body">化验结果</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon  custom_query icon-zhongdianshangpin" style="color: #EE3B3B;"></span>
+		                    <div class="mui-media-body">重点商品查询</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"  style="color: #EE3B3B;"><a href="#">
+		                    <span class="mui-icon  custom_query icon-huayanjieguo"></span>
+		                    <div class="mui-media-body">化验方法</div></a></li>
+		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		                    <span class="mui-icon  custom_query icon-zhishichanquanbeian"  style="color: #EE3B3B;"></span>
+		                    <div class="mui-media-body">知识产权备案</div></a></li>
+		           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3" style="color: #6495ED;"><a href="#">
+                   			 <span class="mui-icon  custom_query icon-haiguanfagui"></span>
+                   			 <div class="mui-media-body">海关法规</div></a></li>
+                  <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"  style="color: #EE3B3B;"><a href="#">
+                   			 <span class="mui-icon  custom_query icon-qiyeqingkuang"></span>
+		                    <div class="mui-media-body">企业情况</div></a></li>
+                  <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"  style="color: #6495ED;"><a href="#">
+		                    <span class="mui-icon  custom_query icon-baoguanyuanjifen"></span>
+		                    <div class="mui-media-body">报关员计分</div></a></li>
+		           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"  style="color: #6495ED;"><a href="#">
+		                    <span class="mui-icon  mui-icon-more"></span>
+		                    <div class="mui-media-body">更多查询</div></a></li>
+		        </ul> 
+		</div>
+	</body>
+	<script src="../../js/mui.min.js"></script>
+	<script>
+		mui.init(); 
+		
+		(function($) {
+				 mui(".mui-table-view").on('tap','.mui-table-view-cell',function(){
+				 		 var url=this.getAttribute("tag") ;
+				 		 if(url==null)
+				 		 {
+				 		 	mui.toast('模块建设中，敬请期待。');
+				 		 	return;
+				 		 }
+						  mui.openWindow({
+								 	createNew:true,
+						      		extras:{
+										url: url//扩展参数
+									} ,
+								    url: 'querynav.html', 
+								    id:'querynav' 
+						  });
+					}); 
+			})(mui);
+		 
+		  
+	</script>
+</html>

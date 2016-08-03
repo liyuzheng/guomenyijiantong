@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="../../css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			.mui-bar~.mui-content .mui-fullscreen {
+				top: 44px;
+				height: auto;
+			}
+			.mui-pull-top-tips {
+				position: absolute;
+				top: -20px;
+				left: 50%;
+				margin-left: -25px;
+				width: 40px;
+				height: 40px;
+				border-radius: 100%;
+				z-index: 1;
+			}
+			.mui-bar~.mui-pull-top-tips {
+				top: 24px;
+			}
+			.mui-pull-top-wrapper {
+				width: 42px;
+				height: 42px;
+				display: block;
+				text-align: center;
+				background-color: #efeff4;
+				border: 1px solid #ddd;
+				border-radius: 25px;
+				background-clip: padding-box;
+				box-shadow: 0 4px 10px #bbb;
+				overflow: hidden;
+			}
+			.mui-pull-top-tips.mui-transitioning {
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+			}
+			.mui-pull-top-tips .mui-pull-loading {
+				/*-webkit-backface-visibility: hidden;
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;*/
+				
+				margin: 0;
+			}
+			.mui-pull-top-wrapper .mui-icon,
+			.mui-pull-top-wrapper .mui-spinner {
+				margin-top: 7px;
+			}
+			.mui-pull-top-wrapper .mui-icon.mui-reverse {
+				/*-webkit-transform: rotate(180deg) translateZ(0);*/
+			}
+			.mui-pull-bottom-tips {
+				text-align: center;
+				background-color: #efeff4;
+				font-size: 15px;
+				line-height: 40px;
+				color: #777;
+			}
+			.mui-pull-top-canvas {
+				overflow: hidden;
+				background-color: #fafafa;
+				border-radius: 40px;
+				box-shadow: 0 4px 10px #bbb;
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+			.mui-pull-top-canvas canvas {
+				width: 40px;
+			}
+			.mui-slider-indicator.mui-segmented-control {
+				background-color: #efeff4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					 
+						<a class="mui-control-item mui-active" href="#item1mobile"  >
+							最新公告
+						</a>
+						<a class="mui-control-item" href="#item2mobile"  >
+							最新署令
+						</a>
+						<a class="mui-control-item" href="#item3mobile" >
+							海关法规
+						</a>
+						 
+					 
+					 
+				</div>
+				<div class="mui-slider-group">
+					<div id="item1mobile" class="mui-slider-item mui-control-content mui-active">
+						<div id="scroll1" class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								
+								<div class="mui-card">
+									<div class="mui-card-header">海关总署 国家发展改革委公告2016年第43号（关于发布57项加工贸易单耗标准的公告）</div>
+										<div class="mui-card-content">
+											<div class="mui-card-content-inner">
+												<code>海关总署和国家发展改革委批准《酚醛注塑制品加工贸易单耗标准》等57项加工贸易单耗标准（标准名称、文本见附件），自2016年9月12日起执行，原《丁苯橡胶加工贸易单耗标准》（标准编号：HDB/SH028-2008）、《轮胎（外胎）加工贸易单耗标准》（标准编号：HDB/SH007-2002）、《多层印制板用粘结片加工贸易单耗标准》（标准编号：HDB/YD009-2009）、《印制电路用覆铜箔层压板加工贸易单耗标准》（标准编号：HDB/YD008-2009）、《精炼铜管材加工贸易单耗标准》（标准编号：HDB/YS010-2008）、《棉制及化纤制非绒类针织染整布加工贸易单耗标准》（标准编号：HDB/FZ040-2008）、《聚酯帘子布加工贸易单耗标准》（标准编号： HDB/FZ085-2012）、《未漂白纯棉坯布加工贸易单耗标准》（标准编号：HDB/FZ012-2000）、《熔喷法非织造布加工贸易单耗标准》（标准号：HDB/FZ044-2009）、《非漂白涤棉混纺坯布加工贸易单耗标准》（标准号：HDB/FZ023-2000）同时废止。特此公告。</code>
+											</div>
+										</div>
+									<div class="mui-card-footer">海关总署 国家发展改革委 2016年7月25日</div>
+								</div>
+								
+								<div class="mui-card">
+									<div class="mui-card-header">海关总署公告2016年第42号（关于调整境内公路承运海关监管货物的运输车辆注册登记提交文件有关事项的公告）</div>
+										<div class="mui-card-content">
+											<div class="mui-card-content-inner">
+												　　根据国务院有关决定，海关总署决定对境内公路承运海关监管货物的运输车辆注册登记提交文件予以调整。申请人在向海关办理境内公路承运海关监管货物车辆的注册登记手续时，对于承运危险货物的车辆，应当同时提交交通运输部门配发的、经营范围涵盖危险货物运输的《道路运输证》复印件，并出示原件。特此公告。
+											</div>
+										</div>
+									<div class="mui-card-footer">海关总署 2016年7月20日</div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div id="item2mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								
+								 <div class="mui-card">
+								 	<a tag="http://www.customs.gov.cn/publish/portal0/tab49564/info781728.htm">
+										<div class="mui-card-header">海关总署第229号令</div>
+											<div class="mui-card-content">
+												<div class="mui-card-content-inner">
+													　　 《中华人民共和国海关〈中华人民共和国政府和大韩民国政府自由贸易协定〉项下进出口货物原产地管理办法》已于2015年12月7日经海关总署署务会议审议通过，现予公布，自2015年12月20日起施行。
+												</div>
+											</div>
+										<div class="mui-card-footer">署 长 2015年12月18日</div>
+									</a>
+								</div>
+								
+								<div class="mui-card">
+									<a tag="http://www.customs.gov.cn/publish/portal0/tab49564/info781720.htm">
+										<div class="mui-card-header">海关总署第228号令</div>
+											<div class="mui-card-content">
+												<div class="mui-card-content-inner">
+													　《中华人民共和国海关〈中华人民共和国政府和澳大利亚政府自由贸易协定〉项下进出口货物原产地管理办法》已于2015年12月7日经海关总署署务会议审议通过，现予公布，自2015年12月20日起施行。
+												</div>
+											</div>
+										<div class="mui-card-footer">署 长 2015年12月18日</div>
+									</a>
+								</div>
+								<div class="mui-card">
+									<a tag="http://www.customs.gov.cn/publish/portal0/tab49564/info738740.htm">
+										<div class="mui-card-header">海关总署第227号令</div>
+											<div class="mui-card-content">
+												<div class="mui-card-content-inner">
+													　　 《海关总署关于修改部分规章的决定》已于2015年4月27日经海关总署署务会议审议通过，现予公布，自公布之日起施行。
+												</div>
+											</div>
+										<div class="mui-card-footer">署 长 2015年4月27日</div>
+									</a>
+								</div>
+								<div class="mui-card">
+									<a tag="http://www.customs.gov.cn/publish/portal0/tab49564/info736195.htm">
+										<div class="mui-card-header">海关总署第226号令</div>
+											<div class="mui-card-content">
+												<div class="mui-card-content-inner">
+													　　《海关总署关于废止部分规章的决定》已于2015年4月3日经海关总署署务会议审议通过，现予公布，自公布之日起施行。
+												</div>
+											</div>
+										<div class="mui-card-footer">署 长 2015年4月7日</div>
+									</a>
+								</div>
+								<div class="mui-card">
+									<a tag="http://www.customs.gov.cn/publish/portal0/tab49564/info720845.htm">
+										<div class="mui-card-header">海关总署第225号令</div>
+											<div class="mui-card-content">
+												<div class="mui-card-content-inner">
+													　　　《中华人民共和国海关企业信用管理暂行办法》已于2014年9月4日经海关总署署务会议审议通过，现予公布，自2014年12月1日起施行
+												</div>
+											</div>
+										<div class="mui-card-footer">署 长 2014年10月8日</div>
+									</a>
+								</div>
+								 	 
+								 	 
+							</div>
+						</div>
+					</div>
+					<div id="item3mobile" class="mui-slider-item mui-control-content">
+						<div class="mui-scroll-wrapper">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li id="test" class="mui-table-view-cell"> 
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info811802.htm">
+											海关总署 国家发展改革委联合公告2016年第43号（关于发布57项加工贸易单耗标准的公告）
+											<p style="float: right;">2016-08-03</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info811146.htm">
+											海关总署公告2016年第41号（关于对进口原产于日本、韩国和土耳其的腈纶征收反倾销税的公告）
+											<p style="float: right;">2016-07-29</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info810974.htm">
+											海关总署公告2016年第42号（关于调整境内公路承运海关监管货物的运输车辆注册登记提交文件有关事项的公告）
+											<p style="float: right;">2016-07-29</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info809040.htm">
+											商务部 财政部 海关总署联合公告2016年第29号（商务部 财政部 海关总署等有关部门编制《服务外包产业重点发展领域指导目录》的公告）
+											<p style="float: right;">2016-07-19</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info808491.htm">
+											海关总署公告2016年第40号（关于明确特别关税起征点的公告）
+											<p style="float: right;">2016-07-14</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info807275.htm">
+											国务院令第670号（关于修改《中华人民共和国海关稽查条例》的决定》）
+											<p style="float: right;">2016-07-07</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell" tag="http://www.customs.gov.cn/publish/portal0/tab49659/info811802.htm">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info806340.htm">
+财政部 发展改革委 工业和信息化部 农业部 商务部 海关总署 国家税务总局 质检总局 食品药品监管总局 濒管办 密码局联合公告2016年第40号（关于公布跨境电子商务零售进口商品清单的公告）
+									<p style="float: right;">2016-07-01</p>
+										</a>
+									</li>
+									<li class="mui-table-view-cell">
+										<a tag="http://www.customs.gov.cn/publish/portal0/tab49659/info806074.htm">
+											海关总署公告2016年第39号（关于中韩自贸协定原产地电子联网及进出口货物报关单填制规范有关事宜的公告）
+											<p style="float: right;">2016-06-30</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					 
+					
+				</div>
+			</div>
+		</div>
+		<script src="../../js/mui.min.js"></script>
+		<script src="js/mui.pullToRefresh.js"></script>
+		<script src="js/mui.pullToRefresh.material.js"></script>
+		<script>
+			mui.init();
+			(function($) {
+				//给a标签加超链接，做简单爬虫。
+				mui(".mui-slider-group a").each(function(){
+					
+					this.addEventListener("tap",function () {
+						 mui.openWindow({
+						 	createNew:true,
+				      		extras:{
+								url:this.getAttribute("tag")  //扩展参数
+							} ,
+						    url: 'newsnav.html', 
+						    id:'newsnav' 
+						  });
+					});
+				});
+				
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration
+				});
+				$.ready(function() {
+					//循环初始化所有下拉刷新，上拉加载。
+					$.each(document.querySelectorAll('.mui-slider-group .mui-scroll'), function(index, pullRefreshEl) {
+						$(pullRefreshEl).pullToRefresh({
+							down: {
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										//var ul = self.element.querySelector('.mui-table-view');
+									//	ul.insertBefore(createFragment(ul, index, 10, true), ul.firstChild);
+										self.endPullDownToRefresh();
+										 
+									}, 1000);
+								}
+							},
+							up: {
+								  
+								callback: function() {
+									var self = this;
+									setTimeout(function() {
+										//var ul = self.element.querySelector('.mui-table-view');
+										//ul.appendChild(createFragment(ul, index, 5));
+										
+										self.endPullUpToRefresh(true);
+									}, 1000);
+								}
+							}
+						});
+					});
+					var createFragment = function(ul, index, count, reverse) {
+						var length = ul.querySelectorAll('li').length;
+						var fragment = document.createDocumentFragment();
+						var li;
+						for (var i = 0; i < count; i++) {
+							li = document.createElement('li');
+							li.className = 'mui-table-view-cell';
+							li.innerHTML = '第' + (index + 1) + '个选项卡子项-' + (length + (reverse ? (count - i) : (i + 1)));
+							fragment.appendChild(li);
+						}
+						return fragment;
+					};
+				});
+			})(mui);
+		</script>
+	</body>
+
+</html>
